@@ -1,0 +1,16 @@
+{
+  "short_name": "พี่แก้ว",
+  "name": "พี่พยาบาลแก้วรอบรู้",
+  "icons": [
+    {
+      "src": "/nurse-avatar.png",
+      "type": "image/png",
+      "sizes": "192x192 512x512 any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "theme_color": "#fce7f3",
+  "description": "แอปพลิเคชันแชทบอทพี่พยาบาลแก้วรอบรู้"
+}

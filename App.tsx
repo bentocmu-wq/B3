@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ChatWindow from './ChatWindow';
+import { BOT_AVATAR } from './constants';
 
 function App() {
   const [isChatStarted, setIsChatStarted] = useState(false);
@@ -45,15 +46,7 @@ function App() {
              <div className="absolute inset-0 bg-gradient-to-tr from-pink-100 to-blue-50 rounded-full shadow-inner transform group-hover:scale-105 transition-transform duration-500"></div>
              <div className="absolute inset-2 bg-white rounded-full shadow-sm flex items-center justify-center overflow-hidden border-4 border-white">
                 {/* Nurse Icon */}
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-20 h-20 text-pink-400">
-                    <path d="M12 8V4H8" />
-                    <rect width="16" height="12" x="4" y="8" rx="2" />
-                    <path d="M2 14h2" />
-                    <path d="M20 14h2" />
-                    <path d="M15 13v2" />
-                    <path d="M9 13v2" />
-                    <path d="M12 12h.01" />
-                </svg>
+                <img src={BOT_AVATAR} alt="Nurse Kaew" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
              </div>
              {/* Status Indicator */}
              <div className="absolute bottom-2 right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md">
