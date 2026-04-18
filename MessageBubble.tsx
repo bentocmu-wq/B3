@@ -1,5 +1,5 @@
 import React from 'react';
-import { Message, Sender } from '../types';
+import { Message, Sender } from './types';
 
 interface MessageBubbleProps {
   message: Message;

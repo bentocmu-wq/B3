@@ -1,14 +1,14 @@
 import { GoogleGenAI } from "@google/genai";
-import { SYSTEM_PROMPT_TEMPLATE } from "../constants";
-import { Message, Sender } from "../types";
+import { SYSTEM_PROMPT_TEMPLATE } from "./constants";
+import { Message, Sender } from "./types";
 
 let geminiClient: GoogleGenAI | null = null;
 
 const getClient = () => {
   if (!geminiClient) {
-    const apiKey = process.env.API_KEY;
+    const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
-      console.error("API_KEY is missing");
+      console.error("GEMINI_API_KEY is missing");
       throw new Error("API Key is missing");
     }
     geminiClient = new GoogleGenAI({ apiKey });

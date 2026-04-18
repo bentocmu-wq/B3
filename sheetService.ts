@@ -1,5 +1,5 @@
-import { SHEET_ID, FALLBACK_DATA } from '../constants';
-import { SheetData } from '../types';
+import { SHEET_ID, FALLBACK_DATA } from './constants';
+import { SheetData } from './types';
 
 /**
  * Attempts to fetch the Google Sheet as CSV.
