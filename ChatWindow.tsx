@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Message, Sender } from '../types';
+import { Message, Sender } from './types';
 import MessageBubble from './MessageBubble';
 import LoadingDots from './LoadingDots';
-import { fetchSheetData } from '../services/sheetService';
-import { generateResponse } from '../services/geminiService';
+import { fetchSheetData } from './sheetService';
+import { generateResponse } from './geminiService';
 
 interface ChatWindowProps {
   onBack?: () => void;
